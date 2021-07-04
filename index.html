@@ -12,11 +12,19 @@
   </head>
   <body>
     
-    <div class="container ">
+    <div class="container">
       <header>
-        <h1 class="text-center" id="msg">Hello, world! let's play Tik Tak Toe</h1>
+        <div class="card" >
+          <h5 class="card-header text-center" id="msg">Hello, let's play Tik Tak Toe </h5>
+          <div class="card-body">
+            <p class="card-title" id="oppo"></p>
+            <p class="card-title" id="me"></p>
+            <small class="bg-warning">Click on grid to fill your symbol</small>
+          </div>
+        </div>
+        <!-- <h1 class="text-center" id="msg">Hello, world! let's play Tik Tak Toe</h1>
         <h5 id="oppo"></h5>
-        <h5 id="me"></h5>
+        <h5 id="me"></h5> -->
       </header>
       <div class="row myrow">
         <div class="col-5 playerX" id="X">X</div>
@@ -38,7 +46,7 @@
         <div class="result my-4">      
           <button onclick="reset()" class="btn btn-danger">Restart</button>
         </div>
-        <div class="card" style="max-width: 20rem;">
+        <div class="card" style="max-width: 24rem;">
           <h5 class="card-header">Winning Record </h5>
           <div class="card-body">
             <h5 class="card-title" id="xwin">X Win - 0</h5>
