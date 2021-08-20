@@ -2,7 +2,14 @@
 
 This is web gaming applications where users can play  tic tac toe.
 
-Live Demo : 
+
+
+### Live Demo : 
+
+## Tech Stack
+ * HTML
+ * CSS
+ * JavaScript
 
 ## Features 
 
