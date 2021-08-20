@@ -4,7 +4,7 @@ This is web gaming applications where users can play  tic tac toe.
 
 
 
-### Live Demo : 
+### Live Demo : https://sachinprajapati8604.github.io/Tic-Tac-Toe-JS/
 
 ## Tech Stack
  * HTML
