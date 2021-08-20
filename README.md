@@ -1,2 +1,13 @@
 # Tic-Tac-Toe-JS
-In this project i have  made a tic tac toe game using html , css , JavaScript. 
+
+This is web gaming applications where users can play  tic tac toe.
+
+Live Demo : 
+
+## Features 
+
+* Live Wishing message screen
+* Takes name of users.
+* Winning record 
+* Better UI.
+
