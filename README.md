@@ -18,5 +18,7 @@ This is web gaming applications where users can play  tic tac toe.
 * Live Wishing message screen
 * Takes name of users.
 * Winning record 
+* Restart feature
+* Toggle player
 * Better UI.
 
