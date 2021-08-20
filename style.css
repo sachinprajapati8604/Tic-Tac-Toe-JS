@@ -1,70 +1,128 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-body{
-    background-color: #14bdac;
+body {
+  background: #11998e; /* fallback for old browsers */
+  background: linear-gradient(
+    to bottom,
+    #38ef7d,
+    #11998e
+  );
+  
 }
-.container{
-    padding: 10px;
-    margin-top: 10px;
+.container {
+  padding: 10px;
+  margin-top: 10px;
 }
-.myrow{
-    margin: auto;
-    width: 300px;
-   
+.myrow {
+  margin: auto;
+  width: 300px;
 }
-.myrow .col-5{
-    background-color: #fff;
-    margin: 10px;
-    text-align: center;
-    font-size: 30px;
+.myrow .col-5 {
+  background-color: #fff;
+  margin: 10px;
+  text-align: center;
+  font-size: 30px;
 }
-.main{
-    color: #fff;
-    margin: auto;
-    margin-top: 50px;
-    height: 300px;
-    width: 305px;
-    display: flex;  
-    flex-wrap: wrap;
-    align-items: center;   
+.main {
+  color: #fff;
+  margin: auto;
+  margin-top: 20px;
+  height: 300px;
+  width: 305px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: grey;
 }
-#box1,#box2,#box3,#box4,#box5,#box6,#box7,#box8,#box9{
-    height: 100px;
-    width: 100px;
-    border: 2px solid #000;
-    text-align: center;
-    font-size: 50px;
-    cursor: pointer;
-}
-#box1,#box4,#box7{
-    border-left: none;
-}
-#box1,#box2,#box3{
-    border-top: none;
-}
-#box3,#box6,#box9{
-    border-right: none;
-}
-#box7,#box8,#box9{
-    border-bottom: none;
-}
-
-#X{
-    background:  green;
+#box1,
+#box2,
+#box3,
+#box4,
+#box5,
+#box6,
+#box7,
+#box8,
+#box9 {
+  height: 100px;
+  width: 100px;
+  border: 2px solid #000;
+  text-align: center;
+  font-size: 50px;
+  cursor: pointer;
 }
 
-#turn{
-    font-size: 25px;
+#box1,
+#box4,
+#box7 {
+  border-left: none;
+}
+#box1,
+#box2,
+#box3 {
+  border-top: none;
+}
+#box3,
+#box6,
+#box9 {
+  border-right: none;
+}
+#box7,
+#box8,
+#box9 {
+  border-bottom: none;
 }
 
-@media screen and (max-width:600px) {
-    header h1{    
-        font-size: 20px;
-    }
-    header h5{
-        font-size: 15px;
-    }
+#X {
+  background: green;
+  color: #fff;
+}
+#O {
+  background: #fff;
+  color: #000;
 }
 
+#turn {
+  font-size: 25px;
+}
+
+.heading {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+header .row {
+  background-color: #fff;
+  padding: 5px;
+  margin: 0;
+}
+.result-col {
+  display: flex;
+  justify-content: flex-end;
+}
+.result-col h5 {
+  padding: 0;
+}
+
+.win-count {
+  color: blue;
+  font-size: 1.5rem;
+}
+.result-col p {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  color: indigo;
+}
+
+@media screen and (max-width: 600px) {
+  header h1 {
+    font-size: 20px;
+  }
+  header h5 {
+    font-size: 15px;
+  }
+  .heading {
+    font-size: 1rem;
+  }
+}

@@ -1,64 +1,73 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Tic-Tac-Toe</title>
-  </head>
-  <body>
-    
+</head>
+
+
+<body>
     <div class="container">
-      <header>
-        <div class="card" >
-          <h5 class="card-header text-center" id="msg">Hello, let's play Tik Tak Toe </h5>
-          <div class="card-body">
-            <p class="card-title" id="oppo"></p>
-            <p class="card-title" id="me"></p>
-            <small class="bg-warning">Click on grid to fill your symbol</small>
-          </div>
+        <header>
+            <div class="row">
+                <h5 class=" text-center my-2" id="msg">  </h5>
+                <hr>
+                <div class="col-6">
+                    <p class="card-title" id="oppo"> </p>
+                    <p class="card-title" id="me"> </p>
+                    <!-- <small class="bg-warning">Click on grid to fill your symbol</small> -->
+                </div>
+                <div class="col-6 result-col">
+                    <div class="right-col">
+                        <div class="heading "> Winning Record</div>
+                        <p class="card-text mb-0" id="xwin">X Win - 0</p>
+                        <p class="card-text mb-0" id="owin">O Win - 0</p>
+                        <p class="card-text mb-0" id="draw">Draw - 0</p>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <div class="row myrow">
+            <div class="col-5 playerX" id="X">X</div>
+            <div class="col-5 playerO" id="O">O</div>
+            <div class="text-center" id="turn">Your turn</div>
         </div>
-        <!-- <h1 class="text-center" id="msg">Hello, world! let's play Tik Tak Toe</h1>
-        <h5 id="oppo"></h5>
-        <h5 id="me"></h5> -->
-      </header>
-      <div class="row myrow">
-        <div class="col-5 playerX" id="X">X</div>
-        <div class="col-5 playerO" id="O">O</div>
-        <div class="text-center" id="turn">Your turn</div>
-      </div>
         <div class="main ">
-          <div id="box1" onclick="fill(this)"></div>
-          <div id="box2" onclick="fill(this)"></div>
-          <div id="box3" onclick="fill(this)"></div>
-          <div id="box4" onclick="fill(this)"></div>
-          <div id="box5" onclick="fill(this)"></div>
-          <div id="box6" onclick="fill(this)"></div>
-          <div id="box7" onclick="fill(this)"></div>
-          <div id="box8" onclick="fill(this)"></div>
-          <div id="box9" onclick="fill(this)"></div>
+            <div id="box1" onclick="fill(this)"></div>
+            <div id="box2" onclick="fill(this)"></div>
+            <div id="box3" onclick="fill(this)"></div>
+            <div id="box4" onclick="fill(this)"></div>
+            <div id="box5" onclick="fill(this)"></div>
+            <div id="box6" onclick="fill(this)"></div>
+            <div id="box7" onclick="fill(this)"></div>
+            <div id="box8" onclick="fill(this)"></div>
+            <div id="box9" onclick="fill(this)"></div>
         </div>
 
-        <div class="result my-4">      
-          <button onclick="reset()" class="btn btn-danger">Restart</button>
+        <div class="result my-4">
+            <button onclick="reset()" class="btn btn-danger">Restart</button>
         </div>
-        <div class="card" style="max-width: 24rem;">
-          <h5 class="card-header">Winning Record </h5>
-          <div class="card-body">
-            <h5 class="card-title" id="xwin">X Win - 0</h5>
-            <h5 class="card-title" id="owin">O Win - 0</h5>
-          </div>
-        </div>
+
     </div>
-    
+
 
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
-    
-  </body>
+
+</body>
+
 </html>
